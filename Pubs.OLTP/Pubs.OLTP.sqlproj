@@ -79,6 +79,11 @@
     <Build Include="Schema Objects\Schemas\dbo\Tables\discounts.sql" />
     <Build Include="Schema Objects\Schemas\dbo\Tables\employee.sql" />
     <Build Include="Schema Objects\Schemas\dbo\Tables\jobs.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\pub_info.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\publishers.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\roysched.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\sales.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\stores.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Pubs.OLTP.refactorlog" />
