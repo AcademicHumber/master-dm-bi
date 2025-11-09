@@ -56,4 +56,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="stor_id" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="708f2159-4766-46f8-b742-5db4b0178681" ChangeDateTime="11/09/2025 15:19:07">
+    <Property Name="ElementName" Value="[dbo].[titleauthor].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[titleauthor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="au_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8c39ee21-d801-4afd-b570-7d23440eb268" ChangeDateTime="11/09/2025 15:20:27">
+    <Property Name="ElementName" Value="[dbo].[titles].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[titles]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="title_id" />
+  </Operation>
 </Operations>
