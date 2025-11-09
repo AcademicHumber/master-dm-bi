@@ -1,13 +1,4 @@
-﻿USE [Pubs]
-GO
-
-/****** Object:  StoredProcedure [dbo].[GetDatabaseRowVersion]    Script Date: 09-Nov-25 10:52:40 ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
+﻿/****** Object:  StoredProcedure [dbo].[GetDatabaseRowVersion]    Script Date: 09-Nov-25 10:52:40 ******/
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>

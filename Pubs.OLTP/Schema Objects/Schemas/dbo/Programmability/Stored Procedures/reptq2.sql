@@ -1,13 +1,4 @@
-﻿USE [Pubs]
-GO
-
-/****** Object:  StoredProcedure [dbo].[reptq2]    Script Date: 09-Nov-25 10:57:18 ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
+﻿/****** Object:  StoredProcedure [dbo].[reptq2]    Script Date: 09-Nov-25 10:57:18 ******/
 
 CREATE PROCEDURE [dbo].[reptq2] AS
 select

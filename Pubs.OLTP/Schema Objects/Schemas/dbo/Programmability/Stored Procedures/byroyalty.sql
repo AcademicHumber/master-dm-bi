@@ -1,13 +1,4 @@
-﻿USE [Pubs]
-GO
-
-/****** Object:  StoredProcedure [dbo].[byroyalty]    Script Date: 09-Nov-25 10:52:07 ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
+﻿/****** Object:  StoredProcedure [dbo].[byroyalty]    Script Date: 09-Nov-25 10:52:07 ******/
 
 CREATE PROCEDURE [dbo].[byroyalty] @percentage int
 AS
