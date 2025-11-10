@@ -7,3 +7,5 @@ Este proyecto tiene como objetivo desarrollar un sistema de gestión de datos y 
 - Adrian Fernandez
 - Jose Carlos Camacho Salazar
 - Américo Itamar Echalar Guzmán
+- Christian Calixto Flores Espinoza
+
