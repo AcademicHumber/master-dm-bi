@@ -1,0 +1,14 @@
+﻿/****** Object:  StoredProcedure [dbo].[reptq1]    Script Date: 09-Nov-25 10:56:41 ******/
+
+CREATE PROCEDURE [dbo].[reptq1] AS
+select
+	case when grouping(pub_id) = 1 then 'ALL' else pub_id end as pub_id,
+	avg(price) as avg_price
+from titles
+where price is NOT NULL
+group by pub_id with rollup
+order by pub_id
+
+GO
+
+

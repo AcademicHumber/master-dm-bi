@@ -56,9 +56,38 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="Tables" />
+    <Folder Include="Schema Objects" />
+    <Folder Include="Schema Objects\Schemas" />
+    <Folder Include="Schema Objects\Schemas\dbo" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\authors.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\byroyalty.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\GetDatabaseRowVersion.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\GetSalesChangeByRowVersion.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\GetStoresChangeByRowVersion.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\GetTitleChangeByRowVersion.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\reptq1.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\reptq2.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\reptq3.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\authors.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\discounts.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\employee.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\jobs.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\pub_info.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\publishers.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\roysched.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\sales.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\stores.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\titleauthor.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\titles.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Pubs.OLTP.refactorlog" />
   </ItemGroup>
 </Project>
