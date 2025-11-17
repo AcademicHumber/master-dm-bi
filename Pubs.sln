@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución",
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PubsDW", "PubsDW\PubsDW.sqlproj", "{DC9D6300-79DB-4A1E-861A-794213417E67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,12 @@ Global
 		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DC9D6300-79DB-4A1E-861A-794213417E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9D6300-79DB-4A1E-861A-794213417E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9D6300-79DB-4A1E-861A-794213417E67}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DC9D6300-79DB-4A1E-861A-794213417E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9D6300-79DB-4A1E-861A-794213417E67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9D6300-79DB-4A1E-861A-794213417E67}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
