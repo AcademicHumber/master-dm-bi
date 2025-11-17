@@ -65,8 +65,6 @@
     <Build Include="Schema\Tables\dbo\DimStore.sql" />
     <Build Include="Schema\Tables\dbo\DimPublisher.sql" />
     <Build Include="Schema\Tables\dbo\DimTitle.sql" />
-    <Build Include="Schema\Tables\dbo\DimAuthor.sql" />
     <Build Include="Schema\Tables\dbo\FactSales.sql" />
-    <Build Include="Schema\Tables\dbo\BridgeTitleAuthor.sql" />
   </ItemGroup>
 </Project>
