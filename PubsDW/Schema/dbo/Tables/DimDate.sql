@@ -10,6 +10,6 @@
     [MonthName] VARCHAR(10) NOT NULL,
     [CalendarQuarter] TINYINT NOT NULL,
     [CalendarYear] SMALLINT NOT NULL,
-    [IsWeekend] BIT NOT NULL
+    [CalendarSemester] TINYINT NOT NULL
 );
 GO
