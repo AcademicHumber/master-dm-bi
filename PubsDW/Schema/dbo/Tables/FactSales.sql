@@ -5,10 +5,7 @@
     [DateKey] INT NOT NULL,
     [StoreKey] INT NOT NULL,
     [TitleKey] INT NOT NULL,
-    [PublisherKey] INT NOT NULL,   
-
-    [OrderNumber_DD] VARCHAR(20) NOT NULL,
-    [PayTerms_DD] VARCHAR(12) NOT NULL,
+    [PublisherKey] INT NOT NULL,
 
     [QuantitySold] SMALLINT NOT NULL, 
     [UnitPrice] MONEY NOT NULL, 
