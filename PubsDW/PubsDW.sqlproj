@@ -68,10 +68,21 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\staging\Security\staging.sql" />
-    <Build Include="Schema\staging\Tables\stores.sql" />
-    <Build Include="Schema\staging\Tables\titles.sql" />
+    <Build Include="Schema\staging\Tables\authors.sql" />
     <Build Include="Schema\staging\Tables\publishers.sql" />
     <Build Include="Schema\staging\Tables\sales.sql" />
+    <Build Include="Schema\staging\Tables\stores.sql" />
+    <Build Include="Schema\staging\Tables\titleauthor.sql" />
+    <Build Include="Schema\staging\Tables\titles.sql" />
+    <Build Include="Schema\dbo\Tables\DimAuthors.sql" />
+    <Build Include="Schema\dbo\Tables\BridgeTitleAuthor.sql" />
+    <Build Include="Schema\dbo\Programability\Stored Procedures\DW_MergeDimAuthors.sql" />
+    <Build Include="Schema\dbo\Programability\Stored Procedures\DW_MergeDimTitles.sql" />
+    <Build Include="Schema\dbo\Programability\Stored Procedures\DW_MergeDimPublishers.sql" />
+    <Build Include="Schema\dbo\Programability\Stored Procedures\DW_MergeDimStores.sql" />
+    <Build Include="Schema\dbo\Programability\Stored Procedures\DW_MergeBridgeTitleAuthor.sql" />
+    <Build Include="Schema\dbo\Programability\Stored Procedures\GetLastPackageRowVersion.sql" />
+    <Build Include="Schema\dbo\Programability\Stored Procedures\UpdateLastPackageRowVersion.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\dbo\Tables\DimDate.sql" />

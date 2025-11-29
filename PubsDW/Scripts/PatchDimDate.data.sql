@@ -1,31 +1,28 @@
 IF NOT EXISTS(SELECT TOP(1) 1
               FROM [dbo].[DimDate]
-			  WHERE [DateKey] = 0)
+              WHERE [Date_SK] = 0)
 BEGIN
 
-INSERT INTO [dbo].[DimDate]
-           ([DateKey]
+    INSERT INTO [dbo].[DimDate]
+           ([Date_SK]
            ,[FullDate]
-           ,[DayNumberOfWeek]
-           ,[DayNameOfWeek]
-           ,[DayNumberOfMonth]
-           ,[DayNumberOfYear]
-           ,[MonthNumberOfYear]
+           ,[Day]
+           ,[Month]
+           ,[Year]
+           ,[Quarter]
+           ,[DayOfWeek]
            ,[MonthName]
-           ,[CalendarQuarter]
-           ,[CalendarYear]
-           ,[CalendarSemester])
+           ,[DayName])
      VALUES
            (0
            ,GETDATE()
-           ,0
-           ,''
-           ,0
-           ,0
-           ,0
-           ,''
-           ,0
-           ,0
-           ,0);
+           ,0  -- Day
+           ,0  -- Month
+           ,0  -- Year
+           ,0  -- Quarter
+           ,0  -- DayOfWeek
+           ,'' -- MonthName
+           ,'' -- DayName
+           );
 END
 GO

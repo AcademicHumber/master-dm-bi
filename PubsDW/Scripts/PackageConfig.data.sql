@@ -26,3 +26,17 @@ IF NOT EXISTS(SELECT TOP(1) 1
 	INSERT [dbo].[PackageConfig] ([TableName], [LastRowVersion]) VALUES ('sales', 0)
  END
 GO
+IF NOT EXISTS(SELECT TOP(1) 1
+              FROM [dbo].[PackageConfig]
+			  WHERE [TableName] = 'authors')
+ BEGIN
+	INSERT [dbo].[PackageConfig] ([TableName], [LastRowVersion]) VALUES ('authors', 0)
+ END
+GO
+IF NOT EXISTS(SELECT TOP(1) 1
+              FROM [dbo].[PackageConfig]
+			  WHERE [TableName] = 'titleauthor')
+ BEGIN
+	INSERT [dbo].[PackageConfig] ([TableName], [LastRowVersion]) VALUES ('titleauthor', 0)
+ END
+GO

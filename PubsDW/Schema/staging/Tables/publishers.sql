@@ -1,9 +1,8 @@
 ﻿CREATE TABLE [staging].[publishers]
 (
-	[PublisherKey] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-    [PublisherName] VARCHAR(40) NULL,
-    [City] VARCHAR(20) NULL,
-    [State] CHAR(2) NULL,
-    [Country] VARCHAR(30) NULL,
-    [PublisherInfo] TEXT NULL
+	[pub_id] CHAR(4) NOT NULL, 
+    [pub_name] VARCHAR(40) NULL, 
+    [city] VARCHAR(20) NULL, 
+    [state] CHAR(2) NULL, 
+    [country] VARCHAR(30) NULL, 
 )

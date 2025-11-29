@@ -65,6 +65,7 @@
     <Folder Include="Schema Objects\Schemas\dbo\Tables" />
     <Folder Include="Schema Objects\Schemas\dbo\Views" />
     <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\byroyalty.sql" />

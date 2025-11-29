@@ -22,7 +22,7 @@ SELECT [stor_id]
       ,[payterms]
       ,[title_id]
 	  ,OrderDateKey=DATEDIFF(s, '19700101', CONVERT(datetime,[ord_date]))
-  FROM [pubs].[dbo].[sales] as s
+  FROM [dbo].[sales] as s
   where s.[RowVersion]>CONVERT(rowversion, @startRow) and s.[RowVersion]<=CONVERT(rowversion, @endRow)
 END
 GO

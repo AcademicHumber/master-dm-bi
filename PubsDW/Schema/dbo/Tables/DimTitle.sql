@@ -1,14 +1,11 @@
 ﻿CREATE TABLE [dbo].[DimTitle]
 (
-    [TitleKey] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-    [TitleID_NK] VARCHAR(6) NOT NULL,
-    [Title] VARCHAR(80) NULL,
-    [TitleType] CHAR(12) NULL,
-    [Price] MONEY NULL,
-    [Advance] MONEY NULL,
-    [Royalty] INT NULL,
-    [YTDSales] INT NULL,
-    [Notes] VARCHAR(200) NULL,
-    [PublicationDate] DATETIME NULL
+    Title_SK INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    Title_ID VARCHAR(6) NOT NULL,
+    TitleName VARCHAR(255) NOT NULL,
+    TitleType VARCHAR(50),
+    PublisherID CHAR(4),
+    Price DECIMAL(10,2),
+    PublicationDate DATE
 );
 GO
