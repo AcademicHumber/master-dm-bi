@@ -1,18 +1,24 @@
 ﻿CREATE TABLE [dbo].[FactSales]
 (
-    [FactSalesKey] BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    [Sales_SK] BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 
-    [DateKey] INT NOT NULL,
-    [StoreKey] INT NOT NULL,
-    [TitleKey] INT NOT NULL,
-    [PublisherKey] INT NOT NULL,
+    -- Foreign keys to DIM tables
+    Title_SK INT NOT NULL,
+    Store_SK INT NOT NULL,
+    Publisher_SK INT NOT NULL,
+    Date_SK INT NOT NULL,
 
-    [QuantitySold] SMALLINT NOT NULL, 
-    [UnitPrice] MONEY NOT NULL, 
-    [TotalSaleAmount] MONEY NOT NULL,
-    CONSTRAINT [FK_FactSales_DimDate] FOREIGN KEY ([DateKey]) REFERENCES [dbo].[DimDate]([DateKey]),
-    CONSTRAINT [FK_FactSales_DimStore] FOREIGN KEY ([StoreKey]) REFERENCES [dbo].[DimStore]([StoreKey]),
-    CONSTRAINT [FK_FactSales_DimTitle] FOREIGN KEY ([TitleKey]) REFERENCES [dbo].[DimTitle]([TitleKey]),
-    CONSTRAINT [FK_FactSales_DimPublisher] FOREIGN KEY ([PublisherKey]) REFERENCES [dbo].[DimPublisher]([PublisherKey]),
+    -- Measures
+    Quantity INT NOT NULL,
+    UnitPrice DECIMAL(10,2) NOT NULL,
+    TotalAmount DECIMAL(10,2),
+
+    -- Natural keys for traceability (optional)
+    OrderNumber VARCHAR(20),
+
+    FOREIGN KEY (Title_SK) REFERENCES DimTitle(Title_SK),
+    FOREIGN KEY (Store_SK) REFERENCES DimStore(Store_SK),
+    FOREIGN KEY (Publisher_SK) REFERENCES DimPublisher(Publisher_SK),
+    FOREIGN KEY (Date_SK) REFERENCES DimDate(Date_SK)
 );
 GO

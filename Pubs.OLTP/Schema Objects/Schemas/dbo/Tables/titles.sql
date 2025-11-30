@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[titles]
 (
-	[title_id] INT NOT NULL PRIMARY KEY, 
+	[title_id] VARCHAR(6) NOT NULL PRIMARY KEY, 
     [title] VARCHAR(80) NULL, 
     [type] CHAR(12) NULL, 
     [pub_id] CHAR(4) NULL, 

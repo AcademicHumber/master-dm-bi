@@ -37,7 +37,7 @@ SELECT t.[title_id]
       ,a.[contract]
 	  ,r.[lorange]
       ,r.[hirange]
-  FROM [pubs].[dbo].[titles] as t
+  FROM [dbo].[titles] as t
   inner join [dbo].[titleauthor] as ta on  (t.title_id=ta.title_id)
   inner join [dbo].[authors] as a on (ta.au_id=a.au_id)
   inner join [dbo].[roysched] as r on (r.title_id=t.title_id)

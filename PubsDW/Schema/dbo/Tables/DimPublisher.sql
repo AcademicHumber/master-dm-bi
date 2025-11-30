@@ -1,11 +1,10 @@
 ﻿CREATE TABLE [dbo].[DimPublisher]
 (
-    [PublisherKey] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-    [PublisherID_NK] CHAR(4) NOT NULL,
+    [Publisher_SK] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [Publisher_ID] CHAR(4) NOT NULL,
     [PublisherName] VARCHAR(40) NULL,
-    [City] VARCHAR(20) NULL,
+    [City] VARCHAR(100) NULL,
     [State] CHAR(2) NULL,
-    [Country] VARCHAR(30) NULL,
-    [PublisherInfo] TEXT NULL
+    [Country] VARCHAR(30) NULL
 );
 GO

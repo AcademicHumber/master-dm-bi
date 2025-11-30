@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[DimStore]
 (
-    [StoreKey] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-    [StoreID_NK] CHAR(4) NOT NULL,
-    [StoreName] VARCHAR(40) NULL,
-    [StoreAddress] VARCHAR(40) NULL,
-    [City] VARCHAR(20) NULL,
-    [State] CHAR(2) NULL,
-    [Zip] CHAR(5) NULL
+    Store_SK INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    Store_ID CHAR(4) NOT NULL,
+    StoreName VARCHAR(255) NOT NULL,
+    Address VARCHAR(255),
+    City VARCHAR(100),
+    State VARCHAR(50),
+    Zip VARCHAR(20)
 );
 GO
