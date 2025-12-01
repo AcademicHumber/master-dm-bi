@@ -13,24 +13,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución",
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PubsDW", "PubsDW\PubsDW.sqlproj", "{DC9D6300-79DB-4A1E-861A-794213417E67}"
 EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Pubs.ETL", "Pubs.ETL\Pubs.ETL.dtproj", "{3239CB7A-BCAD-6102-B7F6-C062369115D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Development|Any CPU.ActiveCfg = Release|Any CPU
+		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Development|Any CPU.Build.0 = Release|Any CPU
+		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Development|Any CPU.Deploy.0 = Release|Any CPU
 		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1CEFCF01-0C27-4130-9622-197ED2F51CC8}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{DC9D6300-79DB-4A1E-861A-794213417E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DC9D6300-79DB-4A1E-861A-794213417E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC9D6300-79DB-4A1E-861A-794213417E67}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DC9D6300-79DB-4A1E-861A-794213417E67}.Development|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9D6300-79DB-4A1E-861A-794213417E67}.Development|Any CPU.Build.0 = Release|Any CPU
+		{DC9D6300-79DB-4A1E-861A-794213417E67}.Development|Any CPU.Deploy.0 = Release|Any CPU
 		{DC9D6300-79DB-4A1E-861A-794213417E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC9D6300-79DB-4A1E-861A-794213417E67}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DC9D6300-79DB-4A1E-861A-794213417E67}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3239CB7A-BCAD-6102-B7F6-C062369115D6}.Debug|Any CPU.ActiveCfg = Development
+		{3239CB7A-BCAD-6102-B7F6-C062369115D6}.Debug|Any CPU.Build.0 = Development
+		{3239CB7A-BCAD-6102-B7F6-C062369115D6}.Development|Any CPU.ActiveCfg = Development
+		{3239CB7A-BCAD-6102-B7F6-C062369115D6}.Development|Any CPU.Build.0 = Development
+		{3239CB7A-BCAD-6102-B7F6-C062369115D6}.Release|Any CPU.ActiveCfg = Development
+		{3239CB7A-BCAD-6102-B7F6-C062369115D6}.Release|Any CPU.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
